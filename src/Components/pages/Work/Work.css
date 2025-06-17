@@ -1,0 +1,87 @@
+/* Work.css */
+.work-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.work-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.work-header p {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  color: #555;
+}
+
+/* Centered filter buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  border: 1px solid #999;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* Grid layout */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.portfolio-item h4 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+.header{
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+}
+.text{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+}

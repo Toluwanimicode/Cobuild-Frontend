@@ -1,0 +1,14 @@
+.heading{
+    font-weight: 400;
+    color: white;
+    line-height: 80px;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-subtitle{
+    color: white;
+}
+.hero-button{
+    background-color: #F5AF00;
+}
+

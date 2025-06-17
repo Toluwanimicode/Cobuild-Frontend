@@ -1,0 +1,37 @@
+.testimonial-section{
+    display: flex;
+    margin: 50px;
+}
+.testimonial-section-2{
+    display: flex;
+    
+}
+.testimonial-section-3{
+    display: flex;
+    margin-left: 10px;
+    
+}
+.testimonial-header{
+    text-align: center;
+}
+.tetimonial-section-4{
+    margin-left: 35px;
+}
+.testimonial-section-5{
+    margin-left: 35px;
+}
+.testimonial-paragraph{
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+}
+.testimonials{
+    margin-top: 30px;
+}
+.name{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+}
