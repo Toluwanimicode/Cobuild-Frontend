@@ -13,25 +13,22 @@ const Services = () => {
             </div>
             <div className='activities'>
                 <div>
-                    <a href="https://www.flaticon.com/free-icons/excavator" title="excavator icons">
-  Excavator icons created by [Author Name] - Flaticon
-</a>
-
+                    <img className='section-image' src="./images/excavator.png" width="100px" height="100px"></img>
                     <h4 className='sub-head'>Fast Operations</h4>
                     <p className='content'>Our team is committed to delivering high-quality results efficiently, ensuring that every project stays on schedule without compromising on standards.</p>
                 </div>
                 <div>
-                    <image />
+                    <img className='section-image'  src="./images/crane.png" width="100px" height="100px"></img>
                     <h4 className='sub-head'>Renovation</h4>
                     <p className='content'>Give your space a fresh, modern look with our renovation services. We transform your existing structure into something truly remarkable.</p>
                 </div>
                 <div>
-                    <image />
+                    <img className='section-image'  src="./images/helmet.png" width="100px" height="100px"></img>
                     <h4 className='sub-head'>Consulation</h4>
                     <p className='content'>Our expert consultants provide guidance every step of the way—from planning and budgeting to material selection and project feasibility.</p>
                 </div>
                 <div>
-                    <image />
+                    <img className='section-image'  src="./images/architecture.png" width="100px" height="100px"></img>
                     <h4 className='sub-head'>Architecture</h4>
                     <p className='content'>Our skilled architects combine creativity and functionality to design spaces that are beautiful, practical, and tailored to your needs.</p>
                 </div>

@@ -56,7 +56,7 @@ const Work = () => {
       : portfolioItems.filter((item) => item.category === activeFilter);
 
   return (
-    <section className="work-section">
+    <section id='work' className="work-section">
       <div className="work-header">
         <h2 className='header'>Featured Work</h2>
         <p className='text'>

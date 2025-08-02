@@ -10,7 +10,7 @@ const Skills = () => {
     ];
 
     return (
-        <div>
+        <div id='skills'>
             <div className="skills-section">
             <div>
                 <h3 className='header'>We are experts in this field

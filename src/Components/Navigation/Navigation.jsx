@@ -24,7 +24,6 @@ function Navigation() {
                         <Nav.Link href="#work">Work</Nav.Link>
                         <Nav.Link href="#skills">Skills</Nav.Link>
                         <Nav.Link href="#testimonials">Testimonials</Nav.Link>
-                        <Nav.Link href="#map">Map</Nav.Link>
                         <Nav.Link href="#contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
