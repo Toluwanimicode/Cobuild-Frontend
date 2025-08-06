@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './Work.css'; 
+import "./work.css"
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState('*');
 
   const filters = [
-    { label: 'All', value: '*' },
+    { label: 'All', value: '*', },
     { label: 'Building', value: 'filter-building' },
     { label: 'Construction', value: 'filter-construction' },
     { label: 'Planning', value: 'filter-planning' },
@@ -59,7 +59,7 @@ const Work = () => {
     <section id='work' className="work-section">
       <div className="work-header">
         <h2 className='header'>Featured Work</h2>
-        <p className='text'>
+        <p className="header-text">
           Take a look at some of the projects we've brought to life. From residential builds to large-scale commercial
           developments.
         </p>

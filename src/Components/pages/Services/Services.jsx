@@ -22,7 +22,7 @@ const Services = () => {
                     <h4 className='sub-head'>Renovation</h4>
                     <p className='content'>Give your space a fresh, modern look with our renovation services. We transform your existing structure into something truly remarkable.</p>
                 </div>
-                <div>
+                <div className='section-2'>
                     <img className='section-image'  src="./images/helmet.png" width="100px" height="100px"></img>
                     <h4 className='sub-head'>Consulation</h4>
                     <p className='content'>Our expert consultants provide guidance every step of the way—from planning and budgeting to material selection and project feasibility.</p>

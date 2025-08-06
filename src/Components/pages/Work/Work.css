@@ -9,13 +9,6 @@
   font-size: 32px;
   margin-bottom: 10px;
 }
-
-.work-header p {
-  max-width: 600px;
-  margin: 0 auto 30px auto;
-  color: #555;
-}
-
 /* Centered filter buttons */
 .filter-buttons {
   display: flex;
@@ -79,9 +72,11 @@
   font-weight: 400;
   color: rgb(34, 34, 34);
 }
-.text{
+.header-text{
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-  color: rgb(153, 153, 153);
+  color:rgb(153, 153, 153);
+  padding-right: 400px;
+  padding-left: 400px;
 }
