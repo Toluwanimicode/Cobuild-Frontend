@@ -1,7 +1,109 @@
-.contact-section{
-    display: flex; 
+/* Main contact section container */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 100px;
+    gap: 50px;
 }
-.sections{
-    padding: 50px;
-    padding-left: 200px;
+
+/* Left side - text & contact info */
+#contact > div > div {
+    flex: 1;
+}
+
+/* Headings */
+#contact h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#contact h4 span {
+    color: #f39c12; /* Accent color for 'In' */
+}
+
+#contact p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact info blocks (phone, email, address) */
+#contact h5 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#contact h6 {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+#contact svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#contact > div > div > div {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+#contact > div > div > div > div {
+    display: flex;
+    align-items: center;
+}
+
+#contact > div > div > div p {
+    margin: 0;
+}
+
+/* Right side - form */
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+/* Response message */
+form p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: green;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #contact {
+        flex-direction: column;
+        padding: 20px;
+    }
 }

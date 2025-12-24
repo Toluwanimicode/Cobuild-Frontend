@@ -6,12 +6,12 @@ import { faPersonDigging } from '@fortawesome/free-solid-svg-icons'; // fa-excav
 
 const Services = () => {
     return (
-        <div id='services'>
+        <div id='services' >
             <div>
-                <h1 className='header'>Our Services</h1>
+                <h1 class='header sm:text-left'>Our Services</h1>
                 <p className='sub-text'>At Cobuild, we offer a wide range of construction services designed to bring your vision to life. We combine quality craftsmanship with expert project management to deliver results you can trust.</p>
             </div>
-            <div className='activities'>
+            <div className='flex services-content'>
                 <div>
                     <img className='section-image' src="./images/excavator.png" width="100px" height="100px"></img>
                     <h4 className='sub-head'>Fast Operations</h4>

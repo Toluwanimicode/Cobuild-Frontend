@@ -1,7 +1,7 @@
 import './App.css';
+import './index.css'
 import Footer from './Components/Footer/Footer';
 import Navigation from "./Components/Navigation/Navigation";
-import Contact from './Components/pages/Contact/Contact';
 import Services from './Components/pages/Services/Services';
 import Skills from './Components/pages/Skills/Skills';
 import Testimonials from './Components/pages/Testimonials/Testimonials';
@@ -35,7 +35,6 @@ function App() {
       <Work />
       <Skills/>
       <Testimonials />
-      <Contact />
       <Footer/>
     </div>
   );

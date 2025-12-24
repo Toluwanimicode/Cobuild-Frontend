@@ -13,7 +13,7 @@ const Skills = () => {
         <div id='skills'>
             <div className="skills-section">
             <div>
-                <h3 className='header'>We are experts in this field
+                <h3 className='header text-red'>We are experts in this field
                 <br/>
                     since almost 20 years</h3>
                 <p></p>
@@ -53,3 +53,4 @@ const Skills = () => {
 };
 
 export default Skills;
+

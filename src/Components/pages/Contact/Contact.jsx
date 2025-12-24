@@ -1,32 +1,37 @@
-import React from 'react';
+import React from "react";
 import "./Contact.css";
+import homeIcon from "./images/house.svg"; 
 
 const Contact = () => {
   return (
-    <div  id='contact' >
-      <div className='contact-section'>
-        <div className='sections'>
-          <i className="fas fa-home" style={{ fontSize: '50px', color: '#F5AF00',  padding: "10px" }}></i>
+    <>
+      <div>
+        <div>
+           <img src="./images/house.svg" alt="Home" width="30" height="30" />
+          <img src="./public/images/house.svg" alt="Girl in a jacket" width="500" height="600"></img>
           <h4>Address</h4>
-          <p>220 Petersham town, Wardell</p>
-          <p>street, Australia PA 6550.</p>
+          <p>220 Petersham town, Wardell street , Australia PA 6550</p>
         </div>
-        <div className='sections'>
-          <i className="fas fa-phone-alt" style={{ fontSize: '50px', color: '#F5AF00', padding: "10px" }}></i>
+        <div>
+          <i className="fa-solid fa-mobile-screen" style={{ fontSize: "30px", color: "red" }}></i>
+
+
           <h4>Phone</h4>
-          <p>Phone: (04) 491 570 110</p>
-          <p>Fax: +04 642 021 332</p>
+          <p>
+            Phone: (04) 491 570 110 <br />
+            Fax: + 04 642 021 332
+          </p>
         </div>
-        <div className='sections'>
-          <i className="fas fa-envelope" style={{ fontSize: '50px', color: '#F5AF00', padding: "10px" }}></i>
+        <div>
           <h4>Email</h4>
-          <p>support@zytheme.com</p>
+          <p>
+            support@zytheme.com <br />
+            Twitter : @zytheme
+          </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
 export default Contact;
-
-

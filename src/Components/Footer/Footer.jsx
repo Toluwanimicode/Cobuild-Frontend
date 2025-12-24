@@ -3,13 +3,10 @@ import "./Footer.css"
 
 const Footer = () => {
 return (
-    <div className='footer-section'>
+    <div >
         <div>
             <div>
-                <p>© DAT 2025, All Rights Reserved</p>
-            </div>
-            <div>
-
+                <p className='footer-content text-bold'>© DAT 2025, All Rights Reserved</p>
             </div>
         </div>
     </div>
