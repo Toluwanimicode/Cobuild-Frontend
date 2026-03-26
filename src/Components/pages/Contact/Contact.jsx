@@ -23,7 +23,7 @@ const Contact = () => {
           </p>
         </div>
         <div>
-          <h4>Email</h4>
+          <h4 text-bold>Email</h4>
           <p>
             support@zytheme.com <br />
             Twitter : @zytheme

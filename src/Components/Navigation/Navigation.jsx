@@ -6,25 +6,48 @@ import "./Navigation.css";
 
 function Navigation() {
     return (
-        <Navbar expand="lg" className="navbar-transparent">
-            <Container>
-                {/* Brand (Logo) on the left */}
-                <Navbar.Brand href="#home" className="d-flex align-items-center">
-                    <Image src="./images/logo-light.png" style={{ height: '40px', width: 'auto' }} />
+        <Navbar expand="lg" className="navbar-transparent px-4 md:px-10 py-3">
+            <Container fluid>
+
+                {/* Logo */}
+                <Navbar.Brand href="#home" className="flex items-center">
+                    <Image 
+                        src="./images/logo-light.png" 
+                        className="h-8 md:h-10 w-auto"
+                    />
                 </Navbar.Brand>
 
-                {/* Toggle button for mobile */}
+                {/* Toggle */}
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-                {/* Nav links on the right */}
+                {/* Links */}
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto nav-link d-flex align-items-center">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#services">Services</Nav.Link>
-                        <Nav.Link href="#work">Work</Nav.Link>
-                        <Nav.Link href="#skills">Skills</Nav.Link>
-                        <Nav.Link href="#testimonials">Testimonials</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Nav className="ms-auto flex flex-col lg:flex-row items-center gap-4 mt-4 lg:mt-0">
+
+                        <Nav.Link href="#home" className="text-sm md:text-base">
+                            Home
+                        </Nav.Link>
+
+                        <Nav.Link href="#services" className="text-sm md:text-base">
+                            Services
+                        </Nav.Link>
+
+                        <Nav.Link href="#work" className="text-sm md:text-base">
+                            Work
+                        </Nav.Link>
+
+                        <Nav.Link href="#skills" className="text-sm md:text-base">
+                            Skills
+                        </Nav.Link>
+
+                        <Nav.Link href="#testimonials" className="text-sm md:text-base">
+                            Testimonials
+                        </Nav.Link>
+
+                        <Nav.Link href="#contact" className="text-sm md:text-base">
+                            Contact
+                        </Nav.Link>
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
