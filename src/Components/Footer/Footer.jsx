@@ -6,7 +6,7 @@ return (
     <div >
         <div>
             <div>
-                <p className='footer-content text-bold'>© DAT 2025, All Rights Reserved</p>
+                <p className='footer-content text-bold'>© DAT 2026, All Rights Reserved</p>
             </div>
         </div>
     </div>
