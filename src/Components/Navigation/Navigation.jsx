@@ -1,53 +1,68 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Image from 'react-bootstrap/Image';
+import { useState, useEffect } from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import "./Navigation.css";
 
 function Navigation() {
-    return (
-        <Navbar expand="lg" className="navbar-transparent px-4 md:px-10 py-3">
-            <Container fluid>
+    const [scrolled, setScrolled] = useState(false);
 
-                {/* Logo */}
-                <Navbar.Brand href="#home" className="flex items-center">
-                    <Image 
-                        src="./images/logo-light.png" 
-                        className="h-8 md:h-10 w-auto"
-                    />
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <Navbar 
+            expand="lg" 
+            fixed="top" 
+            className={`transition-all duration-500 py-3 ${
+                scrolled 
+                ? "bg-white/95 backdrop-blur-md shadow-sm py-2" 
+                : "bg-transparent"
+            }`}
+        >
+            <Container>
+                {/* Brand Name */}
+                <Navbar.Brand href="#home">
+                    <span className={`text-xl md:text-2xl font-bold tracking-tight transition-colors duration-500 ${
+                        scrolled ? "text-orange-400" : "text-white"
+                    }`}>
+                        Cobuild
+                    </span>
                 </Navbar.Brand>
 
-                {/* Toggle */}
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0 focus:shadow-none" />
 
-                {/* Links */}
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto flex flex-col lg:flex-row items-center gap-4 mt-4 lg:mt-0">
-
-                        <Nav.Link href="#home" className="text-sm md:text-base">
-                            Home
-                        </Nav.Link>
-
-                        <Nav.Link href="#services" className="text-sm md:text-base">
-                            Services
-                        </Nav.Link>
-
-                        <Nav.Link href="#work" className="text-sm md:text-base">
-                            Work
-                        </Nav.Link>
-
-                        <Nav.Link href="#skills" className="text-sm md:text-base">
-                            Skills
-                        </Nav.Link>
-
-                        <Nav.Link href="#testimonials" className="text-sm md:text-base">
-                            Testimonials
-                        </Nav.Link>
-
-                        <Nav.Link href="#contact" className="text-sm md:text-base">
+                    {/* items-center + self-center ensures the vertical balance */}
+                    <Nav className="ms-auto flex flex-col lg:flex-row items-center justify-center gap-1 lg:gap-8 mt-4 lg:mt-0">
+                        {["Home", "Services", "Work", "Skills", "Testimonials"].map((item) => (
+                            <Nav.Link 
+                                key={item}
+                                href={`#${item.toLowerCase()}`} 
+                                className={`text-sm font-semibold transition-all hover:text-orange-400 px-2 flex items-center h-full leading-none ${
+                                    scrolled ? "text-gray-800" : "text-white"
+                                }`}
+                                style={{ paddingTop: '0', paddingBottom: '0', alignSelf: 'center' }}
+                            >
+                                {item}
+                            </Nav.Link>
+                        ))}
+                        
+                        {/* Dynamic Contact Button - Aligned with the text */}
+                        <Nav.Link 
+                            href="#contact" 
+                            className={`Contact-button px-6 py-2 rounded-full font-bold text-sm transition-all text-center w-full lg:w-auto mt-2 lg:mt-0 shadow-md  flex items-center justify-center ${
+                                scrolled 
+                                ? "bg-orange-100 text-black hover:bg-orange-200" 
+                                : "bg-orange-400 text-white hover:bg-orange-500"
+                            }`}
+                            style={{ minHeight: '38px', alignSelf: 'center' }} 
+                        >
                             Contact
                         </Nav.Link>
-
                     </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -56,6 +71,3 @@ function Navigation() {
 }
 
 export default Navigation;
-
-
-
