@@ -61,7 +61,7 @@ function Navigation() {
                             }`}
                             style={{ minHeight: '38px', alignSelf: 'center' }} 
                         >
-                            Contact
+                            Contact 
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

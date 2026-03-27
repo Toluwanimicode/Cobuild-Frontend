@@ -19,7 +19,7 @@ const Contact = () => {
           <h4>Phone</h4>
           <p>
             Phone: (04) 491 570 110 <br />
-            Fax: + 04 642 021 332
+            Fax: + 04 642 021 332 42
           </p>
         </div>
         <div>
